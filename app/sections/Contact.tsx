@@ -48,7 +48,7 @@ export default function Contact() {
           <rect width="100%" height="100%" fill="url(#dots)" />
         </svg>
       </div>
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-500/40 to-transparent" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-blue-500/40 to-transparent" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className={`text-center mb-16 transition-all duration-700 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
@@ -75,7 +75,7 @@ export default function Contact() {
                   href={href}
                   className={`flex items-start gap-4 group ${isRTL ? 'flex-row-reverse text-right' : ''}`}
                 >
-                  <div className="w-12 h-12 bg-blue-600/20 border border-blue-500/30 rounded-xl flex items-center justify-center flex-shrink-0 group-hover:bg-blue-600/30 transition-colors duration-200">
+                  <div className="w-12 h-12 bg-blue-600/20 border border-blue-500/30 rounded-xl flex items-center justify-center shrink-0 group-hover:bg-blue-600/30 transition-colors duration-200">
                     <Icon size={18} className="text-blue-400" />
                   </div>
                   <div>

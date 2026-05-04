@@ -32,7 +32,7 @@ export default function Services() {
           <rect width="100%" height="100%" fill="url(#grid)" />
         </svg>
       </div>
-      <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-blue-500/40 to-transparent" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-linear-to-r from-transparent via-blue-500/40 to-transparent" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className={`text-center mb-16 transition-all duration-700 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
@@ -63,7 +63,7 @@ export default function Services() {
                 </div>
                 <h3 className={`text-lg font-bold text-white mb-3 ${language === 'ar' ? 'font-arabic' : ''}`}>{item.title}</h3>
                 <p className={`text-gray-400 text-sm leading-relaxed ${language === 'ar' ? 'font-arabic text-right' : ''}`}>{item.desc}</p>
-                <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-blue-600 to-ocean-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 rounded-b-2xl" />
+                <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-linear-to-r from-blue-600 to-ocean-500 scale-x-0 group-hover:scale-x-100 transition-transform duration-500 rounded-b-2xl" />
               </div>
             );
           })}

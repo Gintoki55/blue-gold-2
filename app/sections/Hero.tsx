@@ -32,8 +32,8 @@ export default function Hero({ onNavigate }: HeroProps) {
           alt="Ocean"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-br from-navy-950/90 via-navy-900/80 to-blue-900/70" />
-        <div className="absolute inset-0 bg-gradient-to-t from-navy-950/60 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-br from-navy-950/90 via-navy-900/80 to-blue-900/70" />
+        <div className="absolute inset-0 bg-linear-to-t from-navy-950/60 via-transparent to-transparent" />
       </div>
 
       {/* Animated wave overlays */}
@@ -64,14 +64,14 @@ export default function Hero({ onNavigate }: HeroProps) {
             {language === 'en' ? (
               <>
                 <span className="block">Blue</span>
-                <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-ocean-300">
+                <span className="block text-transparent bg-clip-text bg-linear-to-r from-blue-300 to-ocean-300">
                   Gold
                 </span>
               </>
             ) : (
               <>
                 <span className="block">الذهب</span>
-                <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-ocean-300">
+                <span className="block text-transparent bg-clip-text bg-linear-to-r from-blue-300 to-ocean-300">
                   الأزرق
                 </span>
               </>
@@ -82,11 +82,11 @@ export default function Hero({ onNavigate }: HeroProps) {
         {/* Tagline */}
         <div className={`transition-all duration-1000 delay-300 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
           <div className="flex items-center justify-center gap-4 mb-4">
-            <div className="h-px w-16 bg-gradient-to-r from-transparent to-blue-400" />
+            <div className="h-px w-16 bg-linear-to-r from-transparent to-blue-400" />
             <p className={`text-blue-200 text-xl md:text-2xl font-semibold tracking-wide ${language === 'ar' ? 'font-arabic' : ''}`}>
               {tr.hero.tagline}
             </p>
-            <div className="h-px w-16 bg-gradient-to-l from-transparent to-blue-400" />
+            <div className="h-px w-16 bg-linear-to-l from-transparent to-blue-400" />
           </div>
           <p className={`text-white/60 max-w-2xl mx-auto text-base md:text-lg leading-relaxed mb-10 ${language === 'ar' ? 'font-arabic' : ''}`}>
             {tr.hero.sub}

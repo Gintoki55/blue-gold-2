@@ -50,7 +50,7 @@ export default function Branches() {
                 } ${isRTL ? 'text-right' : ''}`}
               >
                 <div className="flex items-start gap-3">
-                  <div className={`w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0 ${
+                  <div className={`w-10 h-10 rounded-xl flex items-center justify-center shrink-0 ${
                     selected === branch.id ? 'bg-white/20' : 'bg-blue-50 dark:bg-navy-700'
                   }`}>
                     <MapPin size={18} className={selected === branch.id ? 'text-white' : 'text-blue-600 dark:text-blue-400'} />
@@ -71,7 +71,7 @@ export default function Branches() {
           {/* Branch Detail */}
           <div className="lg:col-span-3 bg-white dark:bg-navy-800 rounded-2xl overflow-hidden border border-gray-100 dark:border-navy-700 shadow-sm">
             {/* Map placeholder */}
-            <div className="relative h-64 bg-gradient-to-br from-navy-800 to-navy-900 flex items-center justify-center overflow-hidden">
+            <div className="relative h-64 bg-linear-to-br from-navy-800 to-navy-900 flex items-center justify-center overflow-hidden">
               <img
                 src="https://images.pexels.com/photos/1001682/pexels-photo-1001682.jpeg?auto=compress&cs=tinysrgb&w=800"
                 alt="Branch location"
@@ -105,7 +105,7 @@ export default function Branches() {
                   { icon: Clock, label: tr.branches.hours, value: language === 'ar' ? activeBranch.hoursAr : activeBranch.hoursEn },
                 ].map(({ icon: Icon, label, value }, i) => (
                   <div key={i} className={`flex items-start gap-4 ${isRTL ? 'flex-row-reverse text-right' : ''}`}>
-                    <div className="w-10 h-10 bg-blue-50 dark:bg-navy-700 rounded-xl flex items-center justify-center flex-shrink-0">
+                    <div className="w-10 h-10 bg-blue-50 dark:bg-navy-700 rounded-xl flex items-center justify-center shrink-0">
                       <Icon size={16} className="text-blue-600 dark:text-blue-400" />
                     </div>
                     <div>

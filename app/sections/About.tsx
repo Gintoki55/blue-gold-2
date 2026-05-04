@@ -82,7 +82,7 @@ export default function About() {
             <ul className="space-y-3">
               {tr.about.reasons.map((reason, i) => (
                 <li key={i} className={`flex items-start gap-3 ${isRTL ? 'flex-row-reverse' : ''}`}>
-                  <CheckCircle size={18} className="text-blue-600 dark:text-blue-400 flex-shrink-0 mt-0.5" />
+                  <CheckCircle size={18} className="text-blue-600 dark:text-blue-400 shrink-0 mt-0.5" />
                   <span className={`text-gray-600 dark:text-gray-300 ${language === 'ar' ? 'font-arabic' : ''}`}>{reason}</span>
                 </li>
               ))}
@@ -115,7 +115,7 @@ export default function About() {
         {/* Stats */}
         <div className={`grid grid-cols-2 md:grid-cols-4 gap-6 transition-all duration-700 delay-500 ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}`}>
           {stats.map((stat, i) => (
-            <div key={i} className="text-center p-6 bg-gradient-to-br from-navy-50 to-blue-50 dark:from-navy-900 dark:to-navy-800 rounded-2xl border border-navy-100 dark:border-navy-700">
+            <div key={i} className="text-center p-6 bg-linear-to-br from-navy-50 to-blue-50 dark:from-navy-900 dark:to-navy-800 rounded-2xl border border-navy-100 dark:border-navy-700">
               <div className="text-4xl md:text-5xl font-extrabold text-blue-600 dark:text-blue-400 mb-2">{stat.value}</div>
               <div className={`text-sm font-medium text-gray-600 dark:text-gray-400 ${language === 'ar' ? 'font-arabic' : ''}`}>{stat.label}</div>
             </div>

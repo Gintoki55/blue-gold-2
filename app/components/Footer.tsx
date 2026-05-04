@@ -93,7 +93,7 @@ export default function Footer({ onNavigate }: FooterProps) {
                     href={href}
                     className={`flex items-start gap-3 text-gray-400 hover:text-white text-sm transition-colors duration-200 ${isRTL ? 'flex-row-reverse' : ''}`}
                   >
-                    <Icon size={14} className="mt-0.5 flex-shrink-0 text-blue-500" />
+                    <Icon size={14} className="mt-0.5 shrink-0 text-blue-500" />
                     <span>{value}</span>
                   </a>
                 </li>

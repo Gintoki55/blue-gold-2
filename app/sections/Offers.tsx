@@ -40,7 +40,7 @@ function CountdownCard({ offer, language, tr }: { offer: typeof offers[0]; langu
     <div className="group relative bg-white dark:bg-navy-800 rounded-2xl overflow-hidden border border-gray-100 dark:border-navy-700 hover:shadow-2xl hover:shadow-blue-900/10 hover:-translate-y-1 transition-all duration-400">
       <div className="relative h-56 overflow-hidden">
         <img src={offer.image} alt="" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-        <div className="absolute inset-0 bg-gradient-to-t from-navy-950/80 to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-t from-navy-950/80 to-transparent" />
         <div className="absolute top-4 left-4">
           <span className="bg-red-500 text-white text-xs font-bold px-3 py-1.5 rounded-lg tracking-wide">{offer.badge}</span>
         </div>

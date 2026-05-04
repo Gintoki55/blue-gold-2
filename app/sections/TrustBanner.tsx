@@ -27,7 +27,7 @@ export default function TrustBanner() {
   ];
 
   return (
-    <section ref={ref} className="py-16 bg-gradient-to-r from-blue-600 to-navy-800 relative overflow-hidden">
+    <section ref={ref} className="py-16 bg-linear-to-r from-blue-600 to-navy-800 relative overflow-hidden">
       <div className="absolute inset-0 opacity-10">
         <svg width="100%" height="100%" viewBox="0 0 1440 100" preserveAspectRatio="none">
           <path d="M0,30 Q360,80 720,30 T1440,30 L1440,100 L0,100 Z" fill="white" />
