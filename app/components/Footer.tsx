@@ -84,9 +84,9 @@ export default function Footer({ onNavigate }: FooterProps) {
             </h4>
             <ul className="space-y-4">
               {[
-                { icon: Phone, value: '+968 2400 0000', href: 'tel:+96824000000' },
-                { icon: Mail, value: 'info@bluegoldtrading.com', href: 'mailto:info@bluegoldtrading.com' },
-                { icon: MapPin, value: language === 'ar' ? 'مسقط، عمان' : 'Muscat, Oman', href: '#' },
+                { icon: Phone, value: '+968 91124724', href: 'tel:+96891124724' },
+                { icon: Mail, value: 'info.bluex@gmail.com', href: 'mailto:info.bluex@gmail.com' },
+                { icon: MapPin, value: language === 'ar' ? 'صلالة الجديدة، عمان' : 'Salalah, Oman', href: '#' },
               ].map(({ icon: Icon, value, href }, i) => (
                 <li key={i}>
                   <a

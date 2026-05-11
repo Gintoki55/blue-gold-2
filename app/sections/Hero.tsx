@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 import { ChevronDown, Fish, ShoppingCart, Globe } from 'lucide-react';
 import { useApp } from '../context/AppContext';
 import { t } from '../data/translations';
-
+import Image from 'next/image';
 interface HeroProps {
   onNavigate: (section: string) => void;
 }
@@ -27,11 +27,13 @@ export default function Hero({ onNavigate }: HeroProps) {
     >
       {/* Background */}
       <div className="absolute inset-0 z-0">
-        <img
-          src="https://images.pexels.com/photos/1001682/pexels-photo-1001682.jpeg?auto=compress&cs=tinysrgb&w=1920"
-          alt="Ocean"
-          className="w-full h-full object-cover"
-        />
+      <Image
+        src="https://images.pexels.com/photos/1001682/pexels-photo-1001682.jpeg?auto=compress&cs=tinysrgb&w=1920"
+        alt="Ocean"
+        fill
+        className="object-cover"
+        priority
+      />
         <div className="absolute inset-0 bg-linear-to-br from-navy-950/90 via-navy-900/80 to-blue-900/70" />
         <div className="absolute inset-0 bg-linear-to-t from-navy-950/60 via-transparent to-transparent" />
       </div>

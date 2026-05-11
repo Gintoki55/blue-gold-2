@@ -33,9 +33,9 @@ export default function Contact() {
   };
 
   const contactInfo = [
-    { icon: Phone, label: tr.contact.phoneLabel, value: '+968 2400 0000', href: 'tel:+96824000000' },
-    { icon: Mail, label: tr.contact.emailLabel, value: 'info@bluegoldtrading.com', href: 'mailto:info@bluegoldtrading.com' },
-    { icon: MapPin, label: tr.contact.address, value: language === 'ar' ? 'الخوير الصناعية، مسقط، عمان' : 'Al Khuwair Industrial Area, Muscat, Oman', href: '#' },
+    { icon: Phone, label: tr.contact.phoneLabel, value: '+968 91124724', href: 'tel:+96891124724' },
+    { icon: Mail, label: tr.contact.emailLabel, value: 'info.bluex@gmail.com', href: 'mailto:info.bluex@gmail.com' },
+    { icon: MapPin, label: tr.contact.address, value: language === 'ar' ? 'بالقرب من جامع السلطان قابوس، صلالة، عمان' : 'Near Sultan Qaboos Mosque, Salalah, Oman', href: '#' },
   ];
 
   return (

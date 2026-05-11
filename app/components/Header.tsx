@@ -95,7 +95,7 @@ export default function Header({ activeSection, onNavigate }: HeaderProps) {
             </button>
 
             <button
-              className="lg:hidden p-2 rounded-lg transition-all duration-200 text-white"
+              className="lg:hidden p-2 rounded-lg transition-all duration-200 text-blue-700 dark:text-white"
               onClick={() => setMenuOpen(!menuOpen)}
             >
               {menuOpen ? <X size={22} /> : <Menu size={22} />}
