@@ -3,7 +3,7 @@ import { Phone, Mail, MapPin, Aperture, MessageCircle } from 'lucide-react';
 import { useApp } from '../context/AppContext';
 import { t } from '../data/translations';
 import Logo from './Logo';
-
+//11
 interface FooterProps {
   onNavigate: (section: string) => void;
 }
